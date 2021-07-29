@@ -15,7 +15,7 @@ const connect = function() {
     console.log("Server connection successful")
     conn.write('Name: RAF');
   })
-  
+
   conn.on('data', (data) => {
     console.log("Server: ", data)
   })
